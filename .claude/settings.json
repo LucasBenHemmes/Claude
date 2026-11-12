@@ -1,10 +1,11 @@
 {
   "extraKnownMarketplaces": {
-    "mattpocock": {
-      "source": { "source": "github", "repo": "mattpocock/skills" }
+    "lucas": {
+      "source": { "source": "github", "repo": "LucasBenHemmes/claude" }
     }
   },
   "enabledPlugins": {
-    "mattpocock-skills@mattpocock": true
+    "lucas-skills@lucas": true,
+    "mattpocock-skills@lucas": true
   }
 }

@@ -1,0 +1,17 @@
+{
+  "name": "lucas",
+  "owner": { "name": "LucasBenHemmes" },
+  "metadata": { "description": "Mijn verzameling Claude Code skills en plugins." },
+  "plugins": [
+    {
+      "name": "lucas-skills",
+      "source": "./plugins/lucas-skills",
+      "description": "Mijn eigen skills."
+    },
+    {
+      "name": "mattpocock-skills",
+      "source": { "source": "github", "repo": "mattpocock/skills" },
+      "description": "Matt Pocock's engineering-skills (TDD, code review, debugging, grilling, specs)."
+    }
+  ]
+}

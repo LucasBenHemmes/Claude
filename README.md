@@ -2,24 +2,36 @@
 
 Verzamelplek voor de skills en plugins die ik met Claude Code gebruik.
 
-## Plugins van anderen
+## Installeren op een computer (eenmalig)
 
-Staan in [`.claude/settings.json`](.claude/settings.json):
+```bash
+claude plugin marketplace add LucasBenHemmes/claude
+```
 
-- `extraKnownMarketplaces`: waar de plugin vandaan komt (meestal een GitHub-repo)
-- `enabledPlugins`: welke plugin aan staat, als `"<plugin>@<marketplace>": true`
+```bash
+claude plugin install lucas-skills@lucas
+```
 
-Nieuwe plugin toevoegen: voeg de marketplace en de plugin toe aan die twee lijsten.
+```bash
+claude plugin install mattpocock-skills@lucas
+```
 
-Huidige plugins:
+In deze repo zelf gebeurt dit automatisch via [`.claude/settings.json`](.claude/settings.json).
+
+## Opbouw
+
+- [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json): de catalogus. Elke plugin heeft een `name` en een `source` (een map hier, of een GitHub-repo).
+- [`plugins/lucas-skills/`](plugins/lucas-skills/): mijn eigen skills, in `skills/<naam>/SKILL.md`.
+
+## Iets toevoegen
+
+- **Eigen skill:** nieuwe map in `plugins/lucas-skills/skills/` en `version` ophogen in `plugins/lucas-skills/.claude-plugin/plugin.json`.
+- **Plugin van een ander:** nieuw item in `marketplace.json`, bijv. `{ "name": "...", "source": { "source": "github", "repo": "eigenaar/repo" } }`. Zet hem in `.claude/settings.json` onder `enabledPlugins` als `"<naam>@lucas": true`.
 
 | Plugin | Bron | Gecontroleerd |
 |---|---|---|
+| `lucas-skills` | deze repo | eigen werk |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | v1.3.2, geen hooks/MCP/allowed-tools |
-
-## Eigen skills
-
-Zet ze in [`.claude/skills/`](.claude/skills/), één map per skill met een `SKILL.md`.
 
 ## Veiligheid: check vóór je iets toevoegt
 
