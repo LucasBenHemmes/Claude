@@ -1,11 +1,16 @@
 {
   "extraKnownMarketplaces": {
     "lucas": {
-      "source": { "source": "github", "repo": "LucasBenHemmes/claude" }
+      "source": {
+        "source": "github",
+        "repo": "LucasBenHemmes/claude"
+      }
     }
   },
   "enabledPlugins": {
     "lucas-skills@lucas": true,
-    "mattpocock-skills@lucas": true
+    "mattpocock-skills@lucas": true,
+    "apple-design@lucas": true,
+    "humanizer@lucas": true
   }
 }

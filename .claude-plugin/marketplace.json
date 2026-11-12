@@ -1,7 +1,11 @@
 {
   "name": "lucas",
-  "owner": { "name": "LucasBenHemmes" },
-  "metadata": { "description": "Mijn verzameling Claude Code skills en plugins." },
+  "owner": {
+    "name": "LucasBenHemmes"
+  },
+  "metadata": {
+    "description": "Mijn verzameling Claude Code skills en plugins."
+  },
   "plugins": [
     {
       "name": "lucas-skills",
@@ -10,8 +14,31 @@
     },
     {
       "name": "mattpocock-skills",
-      "source": { "source": "github", "repo": "mattpocock/skills" },
+      "source": {
+        "source": "github",
+        "repo": "mattpocock/skills"
+      },
       "description": "Matt Pocock's engineering-skills (TDD, code review, debugging, grilling, specs)."
+    },
+    {
+      "name": "apple-design",
+      "source": {
+        "source": "github",
+        "repo": "emilkowalski/skills"
+      },
+      "strict": false,
+      "skills": [
+        "./skills/apple-design"
+      ],
+      "description": "Emil Kowalski: Apple's interface- en motion-principes (WWDC) vertaald naar het web."
+    },
+    {
+      "name": "humanizer",
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      },
+      "description": "blader: herschrijft AI-klinkende tekst zodat die natuurlijk leest."
     }
   ]
 }
