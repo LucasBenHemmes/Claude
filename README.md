@@ -34,9 +34,11 @@ In deze repo zelf gebeurt dit automatisch via [`.claude/settings.json`](.claude/
 
 | Plugin | Bron | Gecontroleerd |
 |---|---|---|
-| `lucas-skills` | deze repo | eigen werk, plus kopie van `apple-design` |
+| `lucas-skills` | deze repo | eigen werk, plus kopieën van `apple-design`, `frontend-design` en `webapp-testing` |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | v1.3.2, geen hooks/MCP/allowed-tools |
 | ↳ `apple-design` (in `lucas-skills`) | kopie uit [emilkowalski/skills](https://github.com/emilkowalski/skills) | `4061b67`, alleen Markdown, MIT |
+| ↳ `frontend-design` (in `lucas-skills`) | kopie uit [anthropics/skills](https://github.com/anthropics/skills) | `2c5958e`, alleen Markdown, Apache-2.0 |
+| ↳ `webapp-testing` (in `lucas-skills`) | kopie uit [anthropics/skills](https://github.com/anthropics/skills) | `2c5958e`, Markdown + Python-helper die lokale servers start en alleen naar localhost kijkt, Apache-2.0 |
 | `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) | v4.0.0 (`b48c832`), geen hooks/MCP/allowed-tools, MIT |
 
 ## Veiligheid: check vóór je iets toevoegt
