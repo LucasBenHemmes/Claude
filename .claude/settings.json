@@ -10,7 +10,6 @@
   "enabledPlugins": {
     "lucas-skills@lucas": true,
     "mattpocock-skills@lucas": true,
-    "apple-design@lucas": true,
     "humanizer@lucas": true
   }
 }

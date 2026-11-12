@@ -21,18 +21,6 @@
       "description": "Matt Pocock's engineering-skills (TDD, code review, debugging, grilling, specs)."
     },
     {
-      "name": "apple-design",
-      "source": {
-        "source": "github",
-        "repo": "emilkowalski/skills"
-      },
-      "strict": false,
-      "skills": [
-        "./skills/apple-design"
-      ],
-      "description": "Emil Kowalski: Apple's interface- en motion-principes (WWDC) vertaald naar het web."
-    },
-    {
       "name": "humanizer",
       "source": {
         "source": "github",

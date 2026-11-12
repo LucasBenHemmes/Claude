@@ -17,10 +17,6 @@ claude plugin install mattpocock-skills@lucas
 ```
 
 ```bash
-claude plugin install apple-design@lucas
-```
-
-```bash
 claude plugin install humanizer@lucas
 ```
 
@@ -38,9 +34,9 @@ In deze repo zelf gebeurt dit automatisch via [`.claude/settings.json`](.claude/
 
 | Plugin | Bron | Gecontroleerd |
 |---|---|---|
-| `lucas-skills` | deze repo | eigen werk |
+| `lucas-skills` | deze repo | eigen werk, plus kopie van `apple-design` |
 | `mattpocock-skills` | [mattpocock/skills](https://github.com/mattpocock/skills) | v1.3.2, geen hooks/MCP/allowed-tools |
-| `apple-design` | [emilkowalski/skills](https://github.com/emilkowalski/skills) (alleen `skills/apple-design`) | `4061b67`, alleen Markdown, MIT |
+| ↳ `apple-design` (in `lucas-skills`) | kopie uit [emilkowalski/skills](https://github.com/emilkowalski/skills) | `4061b67`, alleen Markdown, MIT |
 | `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) | v4.0.0 (`b48c832`), geen hooks/MCP/allowed-tools, MIT |
 
 ## Veiligheid: check vóór je iets toevoegt
